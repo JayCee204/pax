@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAX | Smart Chatbot</title>
+    <link rel="stylesheet" href="CB_Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="pax-navbar">
+        <div class="nav-logo">
+            <span class="brand-text">PAX</span>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="Index.html" class="nav-item active">Dashboard</a></li>
+            <li><a href="Injury.html" class="nav-item">Players</a></li>
+            <li><a href="Report.html" class="nav-item">Reports</a></li>
+            <li><a href="settings.html" class="nav-item">Settings</a></li>
+        </ul>
+
+        <div class="nav-tools">
+            <i class="fa-solid fa-magnifying-glass tool-icon"></i>
+            <i class="fa-solid fa-user tool-icon"></i>
+            <a href="Login.html" id="logoutBtn" class="logout-icon-btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main class="chat-wrapper">
+        <div class="chat-container">
+            <div class="chat-header">P.A.X</div>
+
+            <div class="chat-box" id="chatBox">
+                <div class="bot-message">
+                    Hello! I am P.A.X. How can I help you today?
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Ask PAX about player...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="CB_Script.js"></script>
+</body>
+</html>

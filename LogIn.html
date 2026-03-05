@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAX | Coach Login</title>
+    <link rel="stylesheet" href="Login_Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="login-page">
+
+    <div class="login-container">
+        <div class="login-logo">
+            <i class="fa-solid fa-shield-cat logo-icon"></i>
+            <span class="brand-text">PAX</span>
+        </div>
+        
+        <div class="login-header">
+            <h2>COMMAND YOUR ATHLETES</h2>
+            <p>Enter UserName and Password to Log In</p>
+        </div>
+
+        <div id="errorMessage" class="error-box"></div>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <label>Coach Username</label>
+                <input type="text" id="coachId" placeholder="UserName" required>
+            </div>
+            <div class="input-group">
+                <label>Security Key</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="login-btn" id="loginBtn">LOG IN</button>
+        </form>
+    </div>
+
+    <div id="successToast" class="notification">
+        <div class="content">
+            <i class="fa-solid fa-circle-check toast-icon"></i>
+            <div class="toast-text">
+                <strong>LOGIN SUCCESSFUL</strong>
+                <span>Welcome back, Coach Jesse</span>
+            </div>
+        </div>
+        <div class="toast-progress"></div>
+    </div>
+
+    <script src="Login_Script.js"></script>
+</body>
+</html>

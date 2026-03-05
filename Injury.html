@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAX | Injury Risk Triage</title>
+    <link rel="stylesheet" href="I_Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="risk-page">
+
+   <nav class="pax-navbar">
+        <span class="brand-text">PAX</span>
+    </div>
+
+    <ul class="nav-menu">
+        <li><a href="Index.html" class="nav-item active">Dashboard</a></li>
+        <li><a href="Injury.html" class="nav-item">Players</a></li>
+        <li><a href="Report.html" class="nav-item">Reports</a></li>
+        <li><a href="settings.html" class="nav-item">Settings</a></li>
+    </ul>
+
+    <div class="nav-tools">
+        <button class="tool-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="tool-btn"><i class="fa-solid fa-user"></i></button>
+        <a href="Login.html" id="logoutBtn" class="logout-icon-btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </a>
+    </div>
+</nav>
+
+    <main class="triage-container">
+        <header class="triage-header">
+            <h2>Player Risk Triage</h2>
+            <div class="risk-meter-box">
+                <span class="meter-label">RISK METER</span>
+                <div class="meter-bars">
+                    <div class="bar low">3 → <small>LOW</small></div>
+                    <div class="bar med">7 → <small>MEDIUM</small></div>
+                    <div class="bar high active">10 → <small>HIGH</small></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="risk-list">
+            <div class="risk-card high-bg">
+                <h3>HIGH RISK</h3>
+                <p>Player #10</p>
+            </div>
+
+            <div class="risk-card warn-bg">
+                <h3>WARNING</h3>
+                <p>Player #7</p>
+            </div>
+
+            <div class="risk-card optimal-bg">
+                <h3>OPTIMAL</h3>
+                <p>Player #3</p>
+            </div>
+
+            <div class="dual-cards">
+                <div class="risk-card optimal-bg small">Player #4</div>
+                <div class="risk-card optimal-bg small">Player #12</div>
+            </div>
+        </section>
+
+        <aside class="ai-script-box">
+            <div class="ai-script-header">AI Coaching Script</div>
+            <div class="ai-script-body">
+                Coach, Player 10's sprint volume is 30% high. Suggest tactical positioning and reduced minutes in drills today. Monitor Player 7 for fatigue.
+            </div>
+            <div class="ai-script-footer">
+                <span>COACH OVERRIDE</span>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </aside>
+    </main>
+
+    <script src="I_Script.js"></script>
+
+</body>
+</html>

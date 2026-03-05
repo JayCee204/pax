@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAX | AI Command Center</title>
+    <link rel="stylesheet" href="M_Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main class="ai-content">
+        <header class="ai-header">
+            <div class="pax-logo">PAX</div>
+        </header>
+        
+        <div class="chat-container">
+            <div class="welcome-section" id="welcomeSection">
+                <h1>Hello, Coach Jesse.</h1>
+                <p>Upload files or videos to analyze athlete workload ratios.</p>
+            </div>
+
+                <div id="analysisOutput" class="analysis-output" style="display: none;">
+                    </div>
+            </div>
+
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <input type="file" id="aiFileInput" hidden accept="video/*, .csv, .pdf, .xlsx">
+                    <button class="upload-trigger" onclick="document.getElementById('aiFileInput').click()">
+                        <i class="fa-solid fa-paperclip"></i>
+                    </button>
+                    <a href="Go_Live.html" class="pax-button">GO LIVE</a>
+
+<style>
+.pax-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #C3F53C;
+    color: #131314;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: 0.3s;
+}
+
+.pax-button:hover {
+    background-color: #a8d430;
+    transform: translateY(-2px);
+}
+</style>
+                    <input type="text" id="aiInputText" placeholder="Upload a file...">
+                    <button class="send-btn" id="analyzeBtn"><i class="fa-solid fa-arrow-up"></i></button>
+                </div>
+                <p class="disclaimer">PAX is here for all assistance</p>
+            </div>
+        </main>
+    </div>
+
+    <div id="aiProcessing" class="ai-processing-overlay" style="display: none;">
+        <div class="dna-spinner"></div>
+        <p>ANALYSING...</p>
+    </div>
+
+    <script src="M_Script.js"></script>
+</body>
+</html>

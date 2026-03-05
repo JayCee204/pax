@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Live Stream</title>
+    <link rel="stylesheet" href="GL_Style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>P.A.X </h1>
+        
+        <div class="video-wrapper">
+            <video id="liveVideo" autoplay muted playsinline></video>
+            <div id="statusIndicator" class="status hidden">🔴 LIVE ANALYSIS ACTIVE</div>
+        </div>
+
+        <div class="controls">
+            <button id="goLiveBtn" class="btn start-btn">
+                <span class="icon">◎</span> GO LIVE
+            </button>
+            <button id="stopBtn" class="btn stop-btn hidden">
+                ■ END SESSION
+            </button>
+        </div>
+
+        <div class="log-panel">
+            <h3>AI Analysis Log (Coaching Staff View)</h3>
+            <ul id="logList"></ul>
+        </div>
+    </div>
+
+    <script src="GL_Script.js"></script>
+</body>
+</html>

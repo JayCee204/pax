@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="R_Style.css">
+    <title>P.A.X. | Performance Analytics Reports</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-area">
+                <h1>P.A.X. <span>Performance Analytics X</span></h1>
+            </div>
+            <a href="Manual.html"><button class="btn" onclick="refreshData()">Update Reports</button></a>
+        </header>
+
+        <div class="kpi-wrapper">
+            <div class="card">
+                <h3>Avg ACWR</h3>
+                <div class="value" id="stat-acwr">1.10</div>
+            </div>
+            <div class="card">
+                <h3>Squad Readiness</h3>
+                <div class="card-value">92%</div>
+            </div>
+            <div class="card">
+                <h3>Total Athletes</h3>
+                <div class="value" id="stat-count">0</div>
+            </div>
+        </div>
+
+        <div class="report-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Athlete Name</th>
+                        <th>Acute Load (7d)</th>
+                        <th>Chronic Load (28d)</th>
+                        <th>Ratio (ACWR)</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="athlete-table-body">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="R_Script.js"></script>
+
+</body>
+</html>

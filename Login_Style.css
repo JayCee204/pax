@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.login-page {
+    background: radial-gradient(circle at center, #111 0%, #000 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.login-container {
+    background: rgba(15, 15, 15, 0.9);
+    border: 1px solid #333;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    text-align: center;
+}
+
+.login-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.logo-icon { 
+    color: #C3F53C; 
+    font-size: 2rem;
+}
+
+.brand-text { 
+    font-size: 1.8rem; 
+    font-weight: 800; 
+    letter-spacing: 2px;
+}
+
+.login-header h2 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.login-header p {
+    color: #666;
+    font-size: 0.85rem; 
+    margin-bottom: 25px;
+}
+
+.error-box {
+    background: rgba(255, 77, 77, 0.1);
+    color: #ff4d4d;
+    border-left: 3px solid #ff4d4d;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: left;
+    display: none;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block; 
+    color: #888; 
+    font-size: 0.7rem; 
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%; 
+    background: #000; 
+    border: 1px solid #333; 
+    padding: 12px;
+    color: #fff; 
+    border-radius: 4px; 
+    outline: none; 
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #C3F53C;
+}
+
+.login-btn {
+    width: 100%;
+    background: #C3F53C;
+    color: #000;
+    border: none;
+    padding: 15px;
+    font-weight: 800;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #d4ff5e;
+    transform: translateY(-2px);
+}
+
+.notification {
+    position: fixed; 
+    top: 20px; 
+    right: -400px; 
+    background: #111;
+    border: 1px solid #C3F53C; 
+    padding: 15px 25px; 
+    border-radius: 8px;
+    display: flex; 
+    flex-direction: column; 
+    transition: right 0.5s ease-out;
+}
+
+.notification.show { 
+    right: 20px;
+}
+
+.content {
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
+}
+
+.toast-icon {
+    color: #C3F53C;
+    font-size: 1.5rem;
+}
+
+.toast-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #C3F53C;
+}
