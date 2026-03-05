@@ -39,8 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 500);
 
             setTimeout(() => {
-                window.location.href = "Landing-Page.HTML";
+                window.location.href = "index.HTML";
             }, 2000);
         });
     }
+
 });
